@@ -24,7 +24,34 @@ export const GlobalStyle = createGlobalStyle`
     body {
         font-family: 'Kumbh Sans', sans-serif;
         font-size: 16px;
+        padding: 0 5vw;
+        color: ${({ theme }) => theme.colors.fontColor};
+
+        @media (min-width: ${({ theme }) => theme.tabPort}) {
+            padding: 0 10vw;
+        }
     }
 `;
 
-export const Button = styled.button``;
+export const Button = styled.button`
+  color: var(--clr-white);
+  font-weight: bold;
+  background-color: var(--clr-orange);
+  border: none;
+  border-radius: 5px;
+  padding: 1em;
+  font-size: inherit;
+
+  img {
+    margin-right: 10px;
+    height: 15px;
+  }
+`;
+
+export const Heading = styled.h1`
+  font-size: clamp(1.6rem, 3vw, 3rem);
+  line-height: 1.1;
+  text-transform: capitalize;
+  margin: 0.5em 0;
+  color: ${({ theme }) => theme.colors.headingColor};
+`;
