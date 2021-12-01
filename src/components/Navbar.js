@@ -1,4 +1,5 @@
 import { StyledNavbar, StyledNav, Overlay } from "./styles/Navbar.styled";
+import Cart from "./Cart";
 
 export default function Navbar() {
   return (
@@ -8,7 +9,9 @@ export default function Navbar() {
       <img src="./images/icon-cart.svg" alt="shopping cart" />
       <img src="./images/image-avatar.png" alt="user profile" />
 
-      <Overlay />
+      <Cart />
+
+      {/* <Overlay />
 
       <StyledNav>
         <img src="./images/icon-close.svg" alt="close" />
@@ -29,7 +32,7 @@ export default function Navbar() {
             <a href="/ecommerce-product-page">Contact</a>
           </li>
         </ul>
-      </StyledNav>
+      </StyledNav> */}
     </StyledNavbar>
   );
 }

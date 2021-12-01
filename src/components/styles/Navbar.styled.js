@@ -4,10 +4,10 @@ export const StyledNavbar = styled.div`
   display: flex;
   align-items: center;
   background-color: var(--clr-white);
-  padding: 1.5em 0;
+  padding: 1.5em 7vw;
 
   img:nth-of-type(1) {
-    margin-right: 10px;
+    margin-right: 15px;
   }
 
   img:nth-of-type(2) {
@@ -15,7 +15,7 @@ export const StyledNavbar = styled.div`
   }
 
   img:nth-of-type(3) {
-    margin-right: 10px;
+    margin-right: 15px;
   }
 
   img:nth-of-type(4) {

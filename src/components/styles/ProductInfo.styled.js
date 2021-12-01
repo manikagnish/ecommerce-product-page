@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledProcutInfo = styled.div`
+  padding: 2em 7vw;
   p {
     line-height: 1.4;
     margin: 0.5em 0;

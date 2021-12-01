@@ -24,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
         font-family: 'Kumbh Sans', sans-serif;
         font-size: 16px;
-        padding: 0 5vw;
+        /* padding: 0 5vw; */
         color: ${({ theme }) => theme.colors.fontColor};
 
         @media (min-width: ${({ theme }) => theme.tabPort}) {
@@ -41,6 +41,7 @@ export const Button = styled.button`
   border-radius: 5px;
   padding: 1em;
   font-size: inherit;
+  width: ${({ width }) => width};
 
   img {
     margin-right: 10px;
