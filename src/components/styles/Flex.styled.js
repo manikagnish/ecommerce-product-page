@@ -7,6 +7,7 @@ export const Row = styled.div`
   margin: ${({ margin }) => margin};
   padding: ${({ padding }) => padding};
   background: ${({ background }) => background} 0;
+  width: ${({ width }) => width};
 `;
 
 export const Column = styled.div`

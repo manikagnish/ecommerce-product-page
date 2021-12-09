@@ -1,20 +1,62 @@
-import { StyledNavbar, StyledNav, Overlay } from "./styles/Navbar.styled";
+import { useState, useContext } from "react";
+import { Context } from "../Context";
+
+import {
+  StyledNavbar,
+  StyledNav,
+  Overlay,
+  StyledCart,
+} from "./styles/Navbar.styled";
 import Cart from "./Cart";
 
 export default function Navbar() {
+  const [display, setDisplay] = useState("none");
+  const [translate, setTranslate] = useState("-100%");
+
+  const { showCart, showCount } = useContext(Context);
+  const [displayCart, setDisplayCart] = showCart;
+  const [count] = showCount;
+
   return (
     <StyledNavbar>
-      <img src="./images/icon-menu.svg" alt="hamburger menu" />
+      <img
+        src="./images/icon-menu.svg"
+        alt="hamburger menu"
+        onClick={() => {
+          setDisplay("block");
+          setTranslate("0");
+        }}
+      />
       <img src="./images/logo.svg" alt="logo" />
-      <img src="./images/icon-cart.svg" alt="shopping cart" />
-      <img src="./images/image-avatar.png" alt="user profile" />
+      <StyledCart count={count}>
+        <img
+          className="cart"
+          src="./images/icon-cart.svg"
+          alt="shopping cart"
+          onClick={() => {
+            setDisplayCart(!displayCart);
+          }}
+        />
+      </StyledCart>
+      <img
+        className="profile-img"
+        src="./images/image-avatar.png"
+        alt="user profile"
+      />
 
-      <Cart />
+      <Cart display={displayCart} />
 
-      {/* <Overlay />
+      <Overlay display={display} />
 
-      <StyledNav>
-        <img src="./images/icon-close.svg" alt="close" />
+      <StyledNav translate={translate}>
+        <img
+          src="./images/icon-close.svg"
+          alt="close"
+          onClick={() => {
+            setDisplay("none");
+            setTranslate("-100%");
+          }}
+        />
         <ul>
           <li>
             <a href="/ecommerce-product-page">Collections</a>
@@ -32,7 +74,7 @@ export default function Navbar() {
             <a href="/ecommerce-product-page">Contact</a>
           </li>
         </ul>
-      </StyledNav> */}
+      </StyledNav>
     </StyledNavbar>
   );
 }

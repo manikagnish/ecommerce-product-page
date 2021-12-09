@@ -24,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
         font-family: 'Kumbh Sans', sans-serif;
         font-size: 16px;
-        /* padding: 0 5vw; */
+        overflow-x: hidden;
         color: ${({ theme }) => theme.colors.fontColor};
 
         @media (min-width: ${({ theme }) => theme.tabPort}) {
