@@ -28,7 +28,7 @@ export default function Navbar() {
         }}
       />
       <img src="./images/logo.svg" alt="logo" />
-      <StyledCart count={count}>
+      <StyledCart count={count === 0 ? null : count}>
         <img
           className="cart"
           src="./images/icon-cart.svg"

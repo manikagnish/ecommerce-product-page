@@ -1,3 +1,6 @@
+import { useContext, useState } from "react";
+import { Context } from "../Context";
+
 import {
   StyledProcutInfo,
   CompanyLink,
@@ -12,6 +15,10 @@ import { Column, Row } from "./styles/Flex.styled";
 import { Button } from "./styles/Global";
 
 export default function ProductInfo() {
+  const { showCount } = useContext(Context);
+  const [count, setCount] = showCount;
+  const [itemCount, setItemCount] = useState(0);
+
   return (
     <StyledProcutInfo>
       <Column reverse>
@@ -38,11 +45,17 @@ export default function ProductInfo() {
           padding="1em"
           margin="1em 0"
         >
-          <Update>-</Update>
-          <Number>0</Number>
-          <Update>+</Update>
+          <Update
+            onClick={() =>
+              setItemCount(itemCount > 0 ? itemCount - 1 : itemCount)
+            }
+          >
+            -
+          </Update>
+          <Number>{itemCount}</Number>
+          <Update onClick={() => setItemCount(itemCount + 1)}>+</Update>
         </Row>
-        <Button>
+        <Button onClick={() => setCount(itemCount)}>
           <Row justify="center">
             <img src="./images/icon-cart-white.svg" alt="cart" />{" "}
             <span>Add to cart</span>

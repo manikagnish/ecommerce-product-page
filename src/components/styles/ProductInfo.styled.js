@@ -46,4 +46,5 @@ export const Number = styled.span`
 export const Update = styled.span`
   color: var(--clr-orange);
   font-weight: bold;
+  cursor: pointer;
 `;

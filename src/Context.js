@@ -4,7 +4,7 @@ export const Context = createContext();
 
 export const ContextProvider = (props) => {
   const [displayCart, setDisplayCart] = useState(true);
-  const [count, setCount] = useState(null);
+  const [count, setCount] = useState(0);
 
   return (
     <Context.Provider
