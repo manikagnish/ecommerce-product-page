@@ -10,6 +10,7 @@ export const StyledCart = styled.div`
   top: 5rem;
   z-index: 10;
   border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
 
   h2 {
     margin-bottom: 1em;
@@ -40,6 +41,7 @@ export const CardItem = styled.div`
     height: 1rem;
     margin-left: auto;
     margin-right: 0 !important;
+    cursor: pointer;
   }
   p {
     font-size: 0.9rem;

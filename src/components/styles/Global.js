@@ -43,7 +43,7 @@ export const Button = styled.button`
   font-size: inherit;
   width: ${({ width }) => width};
   cursor: pointer;
-  box-shadow: 0 10px 10px var(--clr-orange-pale);
+  box-shadow: 0 10px 15px var(--clr-orange-pale);
 
   img {
     margin-right: 10px;

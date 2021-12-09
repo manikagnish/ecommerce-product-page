@@ -7,7 +7,7 @@ import { Row } from "./styles/Flex.styled";
 
 export default function Cart({ display }) {
   const { showCount } = useContext(Context);
-  const [count] = showCount;
+  const [count, setCount] = showCount;
 
   return (
     <StyledCart display={display}>
@@ -21,7 +21,13 @@ export default function Cart({ display }) {
                 <p>Autumn Limited Edition...</p>
                 <p>$125.00 x {count} $375.00</p>
               </div>
-              <img src="./images/icon-delete.svg" alt="bin" />
+              <img
+                src="./images/icon-delete.svg"
+                alt="bin"
+                onClick={() => {
+                  setCount(0);
+                }}
+              />
             </Row>
             <Button width="100%">Checkout</Button>
           </>
