@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/ecommerce-product-page/static/js/main.dcdf53dc.chunk.js",
+    "main.js.map": "/ecommerce-product-page/static/js/main.dcdf53dc.chunk.js.map",
+    "runtime-main.js": "/ecommerce-product-page/static/js/runtime-main.241bedf9.js",
+    "runtime-main.js.map": "/ecommerce-product-page/static/js/runtime-main.241bedf9.js.map",
+    "static/css/2.0e2f1025.chunk.css": "/ecommerce-product-page/static/css/2.0e2f1025.chunk.css",
+    "static/js/2.b27d0e13.chunk.js": "/ecommerce-product-page/static/js/2.b27d0e13.chunk.js",
+    "static/js/2.b27d0e13.chunk.js.map": "/ecommerce-product-page/static/js/2.b27d0e13.chunk.js.map",
+    "static/js/3.6d1630ec.chunk.js": "/ecommerce-product-page/static/js/3.6d1630ec.chunk.js",
+    "static/js/3.6d1630ec.chunk.js.map": "/ecommerce-product-page/static/js/3.6d1630ec.chunk.js.map",
+    "index.html": "/ecommerce-product-page/index.html",
+    "static/css/2.0e2f1025.chunk.css.map": "/ecommerce-product-page/static/css/2.0e2f1025.chunk.css.map",
+    "static/js/2.b27d0e13.chunk.js.LICENSE.txt": "/ecommerce-product-page/static/js/2.b27d0e13.chunk.js.LICENSE.txt",
+    "static/media/slick-theme.css": "/ecommerce-product-page/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.241bedf9.js",
+    "static/css/2.0e2f1025.chunk.css",
+    "static/js/2.b27d0e13.chunk.js",
+    "static/js/main.dcdf53dc.chunk.js"
+  ]
+}
