@@ -31,7 +31,7 @@ export default function Navbar() {
           setTranslate("0");
         }}
       />
-      <a href="/#" className="logo">
+      <a href="/ecommerce-product-page" className="logo">
         <img src="./images/logo.svg" alt="logo" />
       </a>
       <Overlay display={display} />

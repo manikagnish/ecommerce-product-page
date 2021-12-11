@@ -10,6 +10,7 @@ import {
   Number,
   Update,
   ButtonContainer,
+  PriceContainer,
 } from "./styles/ProductInfo.styled";
 import { Heading } from "./styles/Global";
 import { Column, Row } from "./styles/Flex.styled";
@@ -34,11 +35,13 @@ export default function ProductInfo() {
         weather can offer.
       </p>
 
-      <Row margin="1.5em 0 .5em 0">
-        <Price>$125.00</Price>
-        <Discount>50%</Discount>
+      <PriceContainer>
+        <Row>
+          <Price>$125.00</Price>
+          <Discount>50%</Discount>
+        </Row>
         <OriginalPrice>$250.00</OriginalPrice>
-      </Row>
+      </PriceContainer>
 
       <ButtonContainer>
         <Row

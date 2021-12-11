@@ -58,15 +58,23 @@ export const ButtonContainer = styled.div`
   @media (min-width: 800px) {
     flex-direction: row;
     align-items: stretch;
-  }
+    div,
+    button {
+      width: 100%;
+      margin: 0;
+    }
 
-  div,
-  button {
-    width: 100%;
-    margin: 0;
+    button {
+      margin-left: 10px;
+    }
   }
+`;
 
-  button {
-    margin-left: 10px;
+export const PriceContainer = styled.div`
+  margin: 1.5em 0 0.5em 0;
+  @media (max-width: 800px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 `;
