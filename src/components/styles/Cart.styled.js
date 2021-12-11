@@ -21,7 +21,7 @@ export const StyledCart = styled.div`
     color: var(--clr-black);
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: ${({ theme }) => theme.tabPort}) {
     width: 30rem;
     top: 12%;
     left: initial;

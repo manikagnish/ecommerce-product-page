@@ -27,7 +27,7 @@ export const StyledCarousel = styled.div`
     height: 100%;
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: ${({ theme }) => theme.tabPort}) {
     width: 40%;
     border-radius: 10px;
 

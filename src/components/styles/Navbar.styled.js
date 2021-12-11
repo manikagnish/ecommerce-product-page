@@ -26,11 +26,11 @@ export const StyledNavbar = styled.div`
     width: 25px;
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: ${({ theme }) => theme.mobile}) {
     padding: 1.5em 0;
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: ${({ theme }) => theme.tabPort}) {
     padding: 0.5em 0 1em 0;
     width: 100%;
     justify-content: space-between;
@@ -92,7 +92,7 @@ export const StyledNav = styled.nav`
     font-weight: bold;
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: ${({ theme }) => theme.tabPort}) {
     min-height: fit-content;
     min-width: 50vw;
     width: 40%;
@@ -139,13 +139,13 @@ export const Hamburger = styled.img`
   margin-right: 15px;
   cursor: pointer;
 
-  @media (min-width: 800px) {
+  @media (min-width: ${({ theme }) => theme.tabPort}) {
     display: none;
   }
 `;
 
 export const Avatar = styled.img`
-  @media (min-width: 800px) {
+  @media (min-width: ${({ theme }) => theme.tabPort}) {
     height: 2.5rem !important;
     width: 2.5rem !important;
   }

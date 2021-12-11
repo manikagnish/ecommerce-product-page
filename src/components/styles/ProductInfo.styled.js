@@ -55,7 +55,7 @@ export const ButtonContainer = styled.div`
   width: 100%;
   padding: 1em 0;
 
-  @media (min-width: 800px) {
+  @media (min-width: ${({ theme }) => theme.tabPort}) {
     flex-direction: row;
     align-items: stretch;
     div,
@@ -72,7 +72,7 @@ export const ButtonContainer = styled.div`
 
 export const PriceContainer = styled.div`
   margin: 1.5em 0 0.5em 0;
-  @media (max-width: 800px) {
+  @media (max-width: ${({ theme }) => theme.tabPort}) {
     display: flex;
     align-items: center;
     justify-content: space-between;

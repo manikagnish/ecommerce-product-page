@@ -4,5 +4,6 @@ export const theme = {
     fontColor: "var(--clr-blue-grayish-dark)",
     headingColor: "var(--clr-blue-dark)",
   },
-  tabPort: "600px",
+  tabPort: "800px",
+  mobile: "600px",
 };

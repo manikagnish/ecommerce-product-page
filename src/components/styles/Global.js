@@ -27,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
         overflow-x: hidden;
         color: ${({ theme }) => theme.colors.fontColor};
 
-        @media (min-width: ${({ theme }) => theme.tabPort}) {
+        @media (min-width: ${({ theme }) => theme.mobile}) {
             padding: 0 10vw;
         }
     }

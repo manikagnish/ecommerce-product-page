@@ -6,7 +6,7 @@ export const StyledMain = styled.main`
   width: 100%;
   padding-bottom: 10em;
 
-  @media (min-width: 800px) {
+  @media (min-width: ${({ theme }) => theme.tabPort}) {
     flex-direction: row;
     align-items: center;
   }
