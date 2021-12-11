@@ -9,6 +9,7 @@ import {
   Discount,
   Number,
   Update,
+  ButtonContainer,
 } from "./styles/ProductInfo.styled";
 import { Heading } from "./styles/Global";
 import { Column, Row } from "./styles/Flex.styled";
@@ -39,7 +40,7 @@ export default function ProductInfo() {
         <OriginalPrice>$250.00</OriginalPrice>
       </Row>
 
-      <Column>
+      <ButtonContainer>
         <Row
           background="var(--clr-blue-grayish-light)"
           padding="1em"
@@ -61,7 +62,7 @@ export default function ProductInfo() {
             <span>Add to cart</span>
           </Row>
         </Button>
-      </Column>
+      </ButtonContainer>
     </StyledProcutInfo>
   );
 }

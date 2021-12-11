@@ -1,11 +1,12 @@
 import Carousel from "./Carousel";
 import ProductInfo from "./ProductInfo";
+import { StyledMain } from "./styles/Main.styled";
 
 export default function Main() {
   return (
-    <main>
+    <StyledMain>
       <Carousel />
       <ProductInfo />
-    </main>
+    </StyledMain>
   );
 }

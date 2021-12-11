@@ -25,7 +25,7 @@ export const OriginalPrice = styled.span`
 
 export const Price = styled.span`
   font-weight: bold;
-  font-size: clamp(1.6rem, 3vw, 3rem);
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
   color: ${({ theme }) => theme.colors.headingColor};
 `;
 
@@ -47,4 +47,26 @@ export const Update = styled.span`
   color: var(--clr-orange);
   font-weight: bold;
   cursor: pointer;
+`;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1em 0;
+
+  @media (min-width: 800px) {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  div,
+  button {
+    width: 100%;
+    margin: 0;
+  }
+
+  button {
+    margin-left: 10px;
+  }
 `;

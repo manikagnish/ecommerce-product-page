@@ -28,10 +28,14 @@ export const StyledNavbar = styled.div`
 
   @media (min-width: 600px) {
     padding: 1.5em 0;
+  }
+
+  @media (min-width: 800px) {
+    padding: 0.5em 0 1em 0;
     width: 100%;
     justify-content: space-between;
     border-bottom: 1px solid var(--clr-blue-grayish);
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 
     img:nth-of-type(2) {
       margin-right: 1em;
@@ -110,10 +114,11 @@ export const StyledNav = styled.nav`
       color: var(--clr-blue-grayish-dark);
       font-weight: normal;
       transition: all 0.3s ease;
+
       &:hover {
         color: var(--clr-black);
         border-bottom: 5px solid var(--clr-orange);
-        padding-bottom: 3.2em;
+        padding-bottom: 2.7em;
       }
     }
   }
