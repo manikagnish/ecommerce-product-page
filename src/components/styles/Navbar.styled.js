@@ -12,7 +12,7 @@ export const StyledNavbar = styled.div`
     cursor: pointer;
   }
 
-  img:nth-of-type(2) {
+  .logo {
     margin-right: auto;
   }
 
@@ -24,6 +24,18 @@ export const StyledNavbar = styled.div`
   .profile-img {
     height: 25px;
     width: 25px;
+  }
+
+  @media (min-width: 600px) {
+    padding: 1.5em 0;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--clr-blue-grayish);
+    margin-bottom: 2em;
+
+    img:nth-of-type(2) {
+      margin-right: 1em;
+    }
   }
 `;
 
@@ -41,7 +53,6 @@ export const StyledCart = styled.div`
     z-index: 100;
     color: white;
     font-size: 10px;
-    /* padding: 1px 0; */
     text-align: center;
   }
 `;
@@ -76,6 +87,36 @@ export const StyledNav = styled.nav`
     color: var(--clr-blue-dark);
     font-weight: bold;
   }
+
+  @media (min-width: 800px) {
+    min-height: fit-content;
+    min-width: 50vw;
+    width: 40%;
+    padding: 2em;
+    background-color: var(--clr-white);
+    position: static;
+    transform: none;
+    transition: none;
+
+    ul {
+      display: flex;
+    }
+    li {
+      margin-bottom: 0;
+      margin-right: 1em;
+    }
+    a {
+      text-decoration: none;
+      color: var(--clr-blue-grayish-dark);
+      font-weight: normal;
+      transition: all 0.3s ease;
+      &:hover {
+        color: var(--clr-black);
+        border-bottom: 5px solid var(--clr-orange);
+        padding-bottom: 3.2em;
+      }
+    }
+  }
 `;
 
 export const Overlay = styled.div`
@@ -87,4 +128,24 @@ export const Overlay = styled.div`
   left: 0;
   z-index: 15;
   background-color: rgba(0, 0, 0, 0.75);
+`;
+
+export const Hamburger = styled.img`
+  margin-right: 15px;
+  cursor: pointer;
+
+  @media (min-width: 800px) {
+    display: none;
+  }
+`;
+
+export const Avatar = styled.img`
+  @media (min-width: 800px) {
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+  }
+  &:hover {
+    border: 2px solid var(--clr-orange);
+    border-radius: 100%;
+  }
 `;

@@ -6,7 +6,11 @@ import {
   StyledNav,
   Overlay,
   StyledCart,
+  Hamburger,
+  Avatar,
 } from "./styles/Navbar.styled";
+
+import { Row } from "./styles/Flex.styled";
 import Cart from "./Cart";
 
 export default function Navbar() {
@@ -19,7 +23,7 @@ export default function Navbar() {
 
   return (
     <StyledNavbar>
-      <img
+      <Hamburger
         src="./images/icon-menu.svg"
         alt="hamburger menu"
         onClick={() => {
@@ -27,29 +31,12 @@ export default function Navbar() {
           setTranslate("0");
         }}
       />
-      <img src="./images/logo.svg" alt="logo" />
-      <StyledCart count={count === 0 ? null : count}>
-        <img
-          className="cart"
-          src="./images/icon-cart.svg"
-          alt="shopping cart"
-          onClick={() => {
-            setDisplayCart(!displayCart);
-          }}
-        />
-      </StyledCart>
-      <img
-        className="profile-img"
-        src="./images/image-avatar.png"
-        alt="user profile"
-      />
-
-      <Cart display={displayCart} />
-
+      <a href="/#" className="logo">
+        <img src="./images/logo.svg" alt="logo" />
+      </a>
       <Overlay display={display} />
-
       <StyledNav translate={translate}>
-        <img
+        <Hamburger
           src="./images/icon-close.svg"
           alt="close"
           onClick={() => {
@@ -75,6 +62,25 @@ export default function Navbar() {
           </li>
         </ul>
       </StyledNav>
+
+      <Row>
+        <StyledCart count={count === 0 ? null : count}>
+          <img
+            className="cart"
+            src="./images/icon-cart.svg"
+            alt="shopping cart"
+            onClick={() => {
+              setDisplayCart(!displayCart);
+            }}
+          />
+        </StyledCart>
+        <Avatar
+          className="profile-img"
+          src="./images/image-avatar.png"
+          alt="user profile"
+        />
+      </Row>
+      <Cart display={displayCart} />
     </StyledNavbar>
   );
 }

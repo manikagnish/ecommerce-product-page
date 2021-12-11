@@ -20,6 +20,14 @@ export const StyledCart = styled.div`
     font-size: 1.2rem;
     color: var(--clr-black);
   }
+
+  @media (min-width: 800px) {
+    width: 30rem;
+    top: 12%;
+    left: initial;
+    right: 5%;
+    z-index: 50;
+  }
 `;
 
 export const CardItem = styled.div`
